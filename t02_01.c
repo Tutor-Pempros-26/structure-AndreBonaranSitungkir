@@ -3,27 +3,26 @@
 #include <stdio.h>
 
 int main() {
-    double jumlah_buku;
-    double harga_buku;
+    int jumlah_buku;
+    float harga_buku;
     
-    // Pakai %lf untuk tipe data double
-    scanf("%lf", &jumlah_buku);
-    scanf("%lf", &harga_buku);
+    scanf("%d", &jumlah_buku);
+    scanf("%f", &harga_buku);
     
-    double total_belanja = jumlah_buku * harga_buku;
-    double diskon = 0.0;
-    
-    if (total_belanja > 500000.0) {
+    float total_belanja = jumlah_buku * harga_buku;
+    float diskon = 0.0;
+
+    if (total_belanja > 500000) {
         diskon = total_belanja * 0.15;
-    } else if (total_belanja >= 100000.0) {
+    } else if (total_belanja > 100000) {
         diskon = total_belanja * 0.10;
-    } else if (total_belanja > 50000.0) {
+    } else if (total_belanja > 50000) {
         diskon = total_belanja * 0.05;
     }
     
-    double total_bayar = total_belanja - diskon;
+    float total_bayar = total_belanja - diskon;
     
-    if (diskon <= 0.0) {
+    if (diskon == 0.0) {
         printf("---\n");
     } else {
         printf("%.2f\n", diskon);
