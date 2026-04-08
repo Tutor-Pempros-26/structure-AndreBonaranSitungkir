@@ -1,0 +1,5 @@
+v1.0 - Membaca dan memahami semua modul tugas T02 Control Structure.
+v1.1 - Membuat file t02_01.c. Menggunakan struktur if-else untuk menentukan diskon dari total belanja Ucok dan Butet. Menambahkan logika format cetak "---" jika diskon tidak didapatkan.
+v1.2 - Membuat file t02_02.c. Menerapkan switch-case berantai (tanpa break) untuk mencetak hirarki 4 sehat 5 sempurna dan menambahkan percabangan if-else di akhir untuk mencetak kesimpulan.
+v1.3 - Membuat file t02_03.c untuk tugas kalkulator operasi berulang. Menggunakan operator perulangan for dengan batasan 4 kali eksekusi dan menerapkan kondisi (break) saat masukan bernilai -1.
+v1.4 - Melakukan uji coba kompilasi ketiga program menggunakan compiler gcc di OS Windows 11 lewat VS Code. Semua test case dari soal sudah lolos dengan output yang sesuai.

@@ -1,11 +1,36 @@
-// NIM - Name
-// NIM - Name
+// 12S25026 - Andre Bonaran Situngkir
 
 #include <stdio.h>
 
-int main(int _argv, char **_argc)
-{
-    //code
+int main() {
+    char operator_pilihan;
+
+    scanf("%c", &operator_pilihan);
+
+    int hasil = 0;
+    if (operator_pilihan == '*') {
+        hasil = 1;
+    }
     
-  return 0;
+    for (int i = 0; i < 4; i++) {
+        int angka_masukan;
+        scanf("%d", &angka_masukan);
+
+        if (angka_masukan == -1) {
+            printf("0\n");
+            break;
+        }
+
+        if (operator_pilihan == '+') {
+            hasil = hasil + angka_masukan;
+        } else if (operator_pilihan == '-') {
+            hasil = hasil - angka_masukan;
+        } else if (operator_pilihan == '*') {
+            hasil = hasil * angka_masukan;
+        }
+
+        printf("%d\n", hasil);
+    }
+    
+    return 0;
 }
